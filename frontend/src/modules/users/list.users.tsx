@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 
 import { useNavigate } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from '../../app/hooks';
+import './create.users.css';
 import './list.users.css';
 import { listUsers } from './users.service';
 
@@ -34,7 +35,7 @@ export const ListUsers = () => {
             <strong>Error: {reduxState.users.errorMessage}</strong>
         } */}
         <h1> Users </h1>
-        <button onClick={routeChange}>Add</button>
+        <button className='btn' onClick={routeChange}>Add</button>
       <table>
         <thead> 
           <tr>
